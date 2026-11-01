@@ -5,7 +5,7 @@ import { ProofField } from './proof.jsx'
 
 const mail = `mailto:${contact.email}`
 
-// Public files live under the site's base path (/Portfolio/ on GitHub Pages).
+// Public files live under the site's base path, so a sub-path deploy only needs `base` in vite.config.js.
 const asset = (path) => import.meta.env.BASE_URL + path.replace(/^\//, '')
 
 // The poster is a real link to the file, so the film plays without scripting too;
